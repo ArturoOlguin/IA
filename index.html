@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/all.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Generador de Árboles - Visualización de Algoritmos</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Generador de Árboles</h1>
+      <form action="" method="post" id="form">
+        <div class="options">
+          <div class="input-box">
+            <span class="details">Amplitud del Árbol</span>
+            <input
+              type="number"
+              name=""
+              id="amplitud"
+              placeholder="Ingrese la amplitud del árbol..."
+              min="1"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error de amplitud</small>
+          </div>
+          <div class="input-box">
+            <span class="details">Nivel del Árbol</span>
+            <input
+              type="number"
+              name=""
+              id="nivel"
+              placeholder="Ingrese el nivel del árbol..."
+              min="2"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error de nivel</small>
+          </div>
+          <div class="input-box">
+            <span class="details">Número de Nodos Padre</span>
+            <input
+              type="number"
+              name=""
+              id="nodoPadre"
+              placeholder="Ingrese número de nodos padre..."
+              min="1"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error de nodos padre</small>
+          </div>
+          <div class="input-box">
+            <span class="details">Número de Nodos Hijo</span>
+            <input
+              type="number"
+              name=""
+              id="nodoHijo"
+              placeholder="Ingrese número de nodos hijo..."
+              min="1"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error de nodos hijo</small>
+          </div>
+          <div class="input-box">
+            <span class="details">Nodo Meta</span>
+            <input
+              type="number"
+              name=""
+              id="nodoMeta"
+              placeholder="Ingrese el nodo meta..."
+              min="1"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error de nodo meta</small>
+          </div>
+          <div class="button">
+            <input type="submit" id="submit" value="Generar Árbol" />
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <script src="script/index.js"></script>
+  </body>
+</html>
