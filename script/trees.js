@@ -153,11 +153,14 @@ async DFSUtil(initNode, Goal, visited) {
 }
 
 //Creacion de constantes par alos valores dados por el formulario
-const nodosHijo = Number(localStorage.getItem("nodoHijo"))
-const nodosPadre = Number(localStorage.getItem("nodoPadre"))
-const nodoMeta = Number(localStorage.getItem("nodoMeta"))
-const amplitud = Number(localStorage.getItem("amplitud"))
-const nivel = Number(localStorage.getItem("nivel"))
+const totalNodos = Number(localStorage.getItem("totalNodos"));
+const nodoRaiz = Number(localStorage.getItem("nodoRaiz"));
+const nodosHijo = Number(localStorage.getItem("nodoHijo"));
+const nodosPadre = Number(localStorage.getItem("nodoPadre"));
+const nodoMeta = Number(localStorage.getItem("nodoMeta"));
+const amplitud = Number(localStorage.getItem("amplitud"));
+const nivel = Number(localStorage.getItem("nivel"));
+const ramas = Number(localStorage.getItem("ramas"));
 //Calculo de constantes que se utilizaran a lo largo
 const minParents = nivel - 1
 const minNodes = amplitud + nivel - 2

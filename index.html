@@ -14,30 +14,31 @@
       <form action="" method="post" id="form">
         <div class="options">
           <div class="input-box">
-            <span class="details">Amplitud del Árbol</span>
+            <span class="details">Número total de nodos</span>
             <input
               type="number"
               name=""
-              id="amplitud"
-              placeholder="Ingrese la amplitud del árbol..."
+              id="totalNodos"
+              placeholder="Ingrese el total de nodos..."
               min="1"
             />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <small>Error de amplitud</small>
+            <small>Error en total de nodos</small>
           </div>
           <div class="input-box">
-            <span class="details">Nivel del Árbol</span>
+            <span class="details">Nodo raíz</span>
             <input
               type="number"
               name=""
-              id="nivel"
-              placeholder="Ingrese el nivel del árbol..."
-              min="2"
+              id="nodoRaiz"
+              placeholder="Ingrese el nodo raíz..."
+              min="1"
+              value="1"
             />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
-            <small>Error de nivel</small>
+            <small>Error en nodo raíz</small>
           </div>
           <div class="input-box">
             <span class="details">Número de Nodos Padre</span>
@@ -78,13 +79,62 @@
             <i class="fas fa-exclamation-circle"></i>
             <small>Error de nodo meta</small>
           </div>
+          <div class="input-box">
+            <span class="details">Amplitud del Árbol</span>
+            <input
+              type="number"
+              name=""
+              id="amplitud"
+              placeholder="Ingrese la amplitud del árbol..."
+              min="1"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error de amplitud</small>
+          </div>
+          <div class="input-box">
+            <span class="details">Profundidad del Árbol</span>
+            <input
+              type="number"
+              name=""
+              id="nivel"
+              placeholder="Ingrese la profundidad del árbol..."
+              min="2"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error de profundidad</small>
+          </div>
+          <div class="input-box">
+            <span class="details">Número de ramas del árbol</span>
+            <input
+              type="number"
+              name=""
+              id="ramas"
+              placeholder="Ingrese número de ramas..."
+              min="1"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error en número de ramas</small>
+          </div>
           <div class="button">
             <input type="submit" id="submit" value="Generar Árbol" />
           </div>
         </div>
       </form>
-
     </div>
+
+    <!-- Modal de resumen -->
+    <div id="summaryModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Resumen del Árbol Generado</h2>
+        <div id="summaryContent"></div>
+        <button id="confirmTree">Confirmar y Visualizar</button>
+      </div>
+    </div>
+
     <script src="script/index.js"></script>
   </body>
 </html>
